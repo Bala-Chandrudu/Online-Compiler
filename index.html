@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- <link rel="stylesheet" href="codeedittor.css"> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://kit.fontawasome.com/e8a2e31b4.js" crossorigin="anonymous"></script>
+  <title>Online Compiler</title>
+  <!-- <script src="https://kit.fontawasome.com/e8a2e31b4.js" crossorigin="anonymous"></script> -->
   <style>
     *{
     margin:0;
@@ -48,7 +49,7 @@ textarea{
 iframe{
     width:100%;
     height:100%;
-    background-color:#fff;
+    background-color:#1f1f1f;
     border:none;
     outline:none;
 }
@@ -61,9 +62,26 @@ label{
     background-color:#000;
     height:30px;
 }
-.fa-solid, .fa-brands{
-    color:aqua;
+.bala {
+  font-size:20px;
+  padding:15px;
+  color:blue;
+  text-align: center;
+  text-decoration: underline black;
 }
+.box h1{
+  text-align:center;
+  color:red;
+  padding:0px 40%;
+}
+.right h1{
+  color:red;
+  text-align:center;
+  padding:0px 40%;
+}
+/* .fa-solid, .fa-brands{
+    color:aqua;
+} */
   </style>
 </head>
 <body>
@@ -78,23 +96,26 @@ label{
     OutPut.contentWindow.eval(jsCode);
   }
   </script>
+  <div class="bala">
+    <h1> Front-End_Compiler</h1>
+  </div>
   <div class="container">
     <div class="left">
       <div class="box">
-        <label for=""><i class="fa-brands fa-html5"></i>Html</label>
+        <label for=""><i class="fa-brands fa-html5"></i><h1>Html</h1></label>
         <textarea id="html-code" onkeyup="run()"></textarea>
       </div>
       <div class="box">
-      <label for=""><i class="fa-brands fa-css3-alt"></i>Css</label>
+      <label for=""><i class="fa-brands fa-css3-alt"></i><h1>Css</h1></label>
       <textarea id="css-code" onkeyup="run()"></textarea>
       </div>
       <div class="box">
-        <label for=""><i class="fa-brands fa-js"></i>JavaScript</label>
+        <label for=""><i class="fa-brands fa-js"></i><h1>JavaScript</h1></label>
         <textarea id="js-code" onkeyup="run()"></textarea>
       </div>
     </div>
     <div class="right">
-      <label for=""><i class="fa-solid fa-play"></i>OutPut</label>
+      <label for=""><i class="fa-solid fa-play"></i><h1>OutPut</h1></label>
       <iframe id="output"></iframe>
     </div>
   </div>
